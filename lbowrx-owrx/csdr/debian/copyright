@@ -1,0 +1,212 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+
+Files: CMakeLists.txt
+ cmake/DetectIfunc.cmake
+ cmake/ifunc_test.c
+ include/amdemod.hpp
+ include/async.hpp
+ include/audioresampler.hpp
+ include/complex.hpp
+ include/converter.hpp
+ include/downmix.hpp
+ include/fft.hpp
+ include/filter.hpp
+ include/firdecimate.hpp
+ include/gain.hpp
+ include/limit.hpp
+ include/module.hpp
+ include/power.hpp
+ include/reader.hpp
+ include/realpart.hpp
+ include/ringbuffer.hpp
+ include/sink.hpp
+ include/source.hpp
+ include/version.hpp
+ include/writer.hpp
+ src/CMakeLists.txt
+ src/Config.cmake.in
+ src/csdr++/CMakeLists.txt
+ src/csdr++/commands.cpp
+ src/csdr++/commands.hpp
+ src/csdr++/csdr++.cpp
+ src/csdr++/csdr++.hpp
+ src/csdr.pc.in
+ src/fmv.h
+ src/lib/CMakeLists.txt
+ src/lib/amdemod.cpp
+ src/lib/async.cpp
+ src/lib/audioresampler.cpp
+ src/lib/converter.cpp
+ src/lib/downmix.cpp
+ src/lib/fft.cpp
+ src/lib/filter.cpp
+ src/lib/firdecimate.cpp
+ src/lib/fmv.h
+ src/lib/gain.cpp
+ src/lib/limit.cpp
+ src/lib/module.cpp
+ src/lib/power.cpp
+ src/lib/reader.cpp
+ src/lib/realpart.cpp
+ src/lib/ringbuffer.cpp
+ src/lib/sink.cpp
+ src/lib/source.cpp
+ src/lib/version.cpp
+ src/lib/writer.cpp
+ src/nmux/CMakeLists.txt
+Copyright: 2020-2022, Jakob Ketterl <jakob.ketterl@gmx.de>
+  2021, Jakob Ketterl <jakob.ketterl@gmx.de>
+  2021-2022, Jakob Ketterl <jakob.ketterl@gmx.de>
+License: GPL-3+
+
+Files: include/benchmark.hpp
+ include/dbpsk.hpp
+ include/dcblock.hpp
+ include/deemphasis.hpp
+ include/fftexchangesides.hpp
+ include/fftfilter.hpp
+ include/fir.hpp
+ include/fmdemod.hpp
+ include/fractionaldecimator.hpp
+ include/libcsdr.h
+ include/logaveragepower.hpp
+ include/logpower.hpp
+ include/shift.hpp
+ include/timingrecovery.hpp
+ include/varicode.hpp
+ include/window.hpp
+ src/lib/benchmark.cpp
+ src/lib/dbpsk.cpp
+ src/lib/dcblock.cpp
+ src/lib/deemphasis.cpp
+ src/lib/fftexchangesides.cpp
+ src/lib/fftfilter.cpp
+ src/lib/fir.cpp
+ src/lib/fmdemod.cpp
+ src/lib/fractionaldecimator.cpp
+ src/lib/logaveragepower.cpp
+ src/lib/logpower.cpp
+ src/lib/shift.cpp
+ src/lib/timingrecovery.cpp
+ src/lib/varicode.cpp
+ src/lib/window.cpp
+ src/libcsdr.c
+Copyright: 2014, Andras Retzler <randras@sdr.hu>
+  2014-2015, Andras Retzler <randras@sdr.hu>
+  2019-2021, Jakob Ketterl <jakob.ketterl@gmx.de>
+  2021, Jakob Ketterl <jakob.ketterl@gmx.de>
+License: BSD-3-clause
+
+Files: src/fastddc.h
+ src/fft_fftw.c
+ src/fft_fftw.h
+ src/nmux/nmux.h
+ src/nmux/tsmpool.cpp
+ src/nmux/tsmpool.h
+ src/shims.h
+Copyright: UNKNOWN
+License: UNKNOWN
+
+Files: src/benchmark.c
+ src/benchmark.h
+ src/csdr.c
+ src/fastddc.c
+ src/lib/predefined.h
+ src/nmux/nmux.cpp
+ src/predefined.h
+Copyright: 2014, Andras Retzler <randras@sdr.hu>
+  2014-2015, Andras Retzler <randras@sdr.hu>
+License: BSD-3-clause
+
+Files: include/agc.hpp
+ src/lib/agc.cpp
+ src/libcsdr_gpl.c
+ src/libcsdr_gpl.h
+Copyright: 2006, 2010, 2012, Free Software Foundation, Inc.
+  Andras Retzler, HA7ILM <randras@sdr.hu>
+  Jakob Ketterl, DD5JFK <jakob.ketterl@gmx.de>
+  Warren Pratt, NR0V <warren@wpratt.com>
+License: GPL-3+
+
+Files: include/adpcm.hpp
+ src/lib/adpcm.cpp
+Copyright: 1992, Stichting Mathematisch Centrum, Amsterdam, The
+  1997, Tim Kientzle.
+  2015, Andras Retzler <randras@sdr.hu>
+  2021, Jakob Ketterl <jakob.ketterl@gmx.de>
+License: BSD-3-clause and/or BSD-4-clause
+
+Files: src/csdr++/CLI11.hpp
+Copyright: 2017-2019, University of Cincinnati, developed by Henry
+License: BSD-3-clause
+
+Files: src/ima_adpcm.c
+Copyright: 1992, Stichting Mathematisch Centrum, Amsterdam, The
+  1997, Tim Kientzle.
+  2015, Andras Retzler <randras@sdr.hu>
+License: BSD-3-clause and/or BSD-4-clause
+
+Files: LICENSE-GPL
+Copyright: 2007, Free Software Foundation, Inc. <https:fsf.org/>
+License: GPL-3
+
+License: GPL-3+
+ This program is free software; you can redistribute it and/or modify it under
+ the terms of the GNU General Public License as published by the Free Software
+ Foundation; either version 3 of the License, or (at your option) any later
+ version.
+ .
+ This program is distributed in the hope that it will be useful, but WITHOUT
+ ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+ details.
+ .
+ You should have received a copy of the GNU General Public License along with
+ this package; if not, write to the Free Software Foundation, Inc., 51 Franklin
+ St, Fifth Floor, Boston, MA  02110-1301 USA
+ .
+ On Debian systems, the full text of the GNU General Public License version 3
+ can be found in the file `/usr/share/common-licenses/GPL-3'.
+
+License: GPL-3
+ This program is free software; you can redistribute it and/or modify it under
+ the terms of the GNU General Public License as published by the Free Software
+ Foundation; either version 3 of the License, or (at your option) any later
+ version.
+ .
+ This program is distributed in the hope that it will be useful, but WITHOUT
+ ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+ details.
+ .
+ You should have received a copy of the GNU General Public License along with
+ this package; if not, write to the Free Software Foundation, Inc., 51 Franklin
+ St, Fifth Floor, Boston, MA  02110-1301 USA
+ .
+ On Debian systems, the full text of the GNU General Public License version 3
+ can be found in the file `/usr/share/common-licenses/GPL-3'.
+
+License: BSD-3-Clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. Neither the name of the University nor the names of its contributors
+    may be used to endorse or promote products derived from this software
+    without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE HOLDERS OR
+ CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

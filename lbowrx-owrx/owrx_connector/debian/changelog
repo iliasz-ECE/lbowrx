@@ -1,0 +1,35 @@
+owrx-connector (0.6.2) bullseye jammy; urgency=low
+
+  * New build for csdr 0.18.2
+
+ -- Jakob Ketterl <jakob.ketterl@gmx.de>  Sun, 08 Oct 2023 23:31:00 +0000
+
+owrx-connector (0.6.1) bullseye jammy; urgency=low
+
+  * New build for csdr 0.18.1
+
+ -- Jakob Ketterl <jakob.ketterl@gmx.de>  Mon, 26 Sep 2022 18:01:00 +0000
+
+owrx-connector (0.6.0) bullseye jammy; urgency=low
+
+  * Switch to csdr ringbuffer implementation
+  * Fix some memory leaks
+
+ -- Jakob Ketterl <jakob.ketterl@gmx.de>  Tue, 14 Jun 2022 20:24:00 +0000
+
+owrx-connector (0.5.0) buster hirsute; urgency=low
+
+  * Improves performance on 32bit ARM through vectorization
+  * Fixes some memory leaks
+
+ -- Jakob Ketterl <jakob.ketterl@gmx.de>  Mon, 02 Aug 2021 16:16:00 +0000
+
+owrx-connector (0.4.0) buster hirsute; urgency=low
+
+  * First release using debian build system; first changelog entry.
+  * New connector library introduced that contains common functionality for
+    all connectors
+  * All connectors have been rewritten in C++ to use the new library
+  * Improved handling for direct sampling mode
+
+ -- Jakob Ketterl <jakob.ketterl@gmx.de>  Thu, 06 May 2021 14:53:00 +0000

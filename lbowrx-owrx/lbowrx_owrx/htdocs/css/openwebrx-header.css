@@ -1,0 +1,227 @@
+.webrx-top-container {
+    position: relative;
+    z-index:1000;
+    background-color: #575757;
+
+    background-image: url(../gfx/openwebrx-top-photo.jpg);
+    background-position-x: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    overflow: hidden;
+}
+
+.openwebrx-description-container {
+    transition-property: height, opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    opacity: 0;
+    height: 0;
+    /* originally, top-bar + description was 350px */
+    max-height: 283px;
+    overflow: hidden;
+}
+
+.openwebrx-description-container.expanded {
+    opacity: 1;
+    height: 283px;
+}
+
+.webrx-top-bar {
+    height:67px;
+
+    background: rgba(128, 128, 128, 0.15);
+    margin:0;
+    padding:0;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.webrx-top-bar > * {
+    flex: 0;
+}
+
+.webrx-top-container, .webrx-top-container * {
+    line-height: initial;
+    box-sizing: initial;
+}
+
+.webrx-top-logo {
+    width: 261px;
+    padding: 12px;
+    filter: drop-shadow(0 0 2.5px rgba(0, 0, 0, .9));
+    /* overwritten by media queries */
+    display: none;
+}
+
+.webrx-rx-avatar {
+    background-color: rgba(154, 154, 154, .5);
+    margin: 7px;
+
+    width: 46px;
+    height: 46px;
+    padding: 4px;
+    border-radius: 8px;
+    box-sizing: content-box;
+}
+
+.webrx-rx-texts {
+    /* minimum layout width */
+    width: 0;
+    /* will be getting wider with flex */
+    flex: 1;
+    overflow: hidden;
+    margin: auto 0;
+}
+
+.webrx-rx-texts div, .webrx-rx-texts h1 {
+    margin: 0 10px;
+    padding: 3px;
+    white-space:nowrap;
+    overflow: hidden;
+    color: #909090;
+    text-align: left;
+}
+
+.webrx-rx-title {
+    font-family: "DejaVu Sans", Verdana, Geneva, sans-serif;
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+.webrx-rx-desc {
+    font-size: 10pt;
+}
+
+.openwebrx-main-buttons .button {
+    display: block;
+    width: 55px;
+    cursor:pointer;
+}
+
+.openwebrx-main-buttons .button[data-toggle-panel] {
+    /* will be enabled by javascript if the panel is present in the DOM */
+    display: none;
+}
+
+.openwebrx-main-buttons .button img,
+.openwebrx-main-buttons .button svg {
+    height: 38px;
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.5));
+}
+
+.openwebrx-main-buttons a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.openwebrx-main-buttons .button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.openwebrx-main-buttons .button:active {
+    background-color: rgba(255, 255, 255, 0.55);
+}
+
+
+.openwebrx-main-buttons {
+    padding: 5px 15px;
+    display: flex;
+    list-style: none;
+    margin:0;
+    color: white;
+    text-shadow: 0px 0px 4px #000000;
+    text-align: center;
+    font-size: 9pt;
+    font-weight: bold;
+}
+
+.webrx-rx-photo-title {
+    margin: 10px 15px;
+    color: white;
+    font-size: 16pt;
+    text-shadow: 1px 1px 4px #444;
+    opacity: 1;
+}
+
+.webrx-rx-photo-desc {
+    margin: 10px 15px;
+    color: white;
+    font-size: 10pt;
+    font-weight: bold;
+    text-shadow: 0px 0px 6px #444;
+    opacity: 1;
+    line-height: 1.5em;
+}
+
+.webrx-rx-photo-desc a {
+    color: #5ca8ff;
+    text-shadow: none;
+}
+
+.openwebrx-photo-trigger {
+    cursor: pointer;
+}
+
+/*
+ * Responsive stuff
+ */
+
+@media (min-width: 576px) {
+    .webrx-rx-texts {
+        display: initial;
+    }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+    .webrx-top-logo {
+        display: initial;
+    }
+}
+
+@media (min-width: 1200px) {
+}
+
+/*
+ * RX details arrow up/down switching
+ */
+
+.openwebrx-rx-details-arrow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    display: block;
+}
+
+.openwebrx-rx-details-arrow svg {
+    height: 12px;
+}
+
+.openwebrx-rx-details-arrow .up {
+    display: none;
+}
+
+.openwebrx-rx-details-arrow--up .down {
+    display: none;
+}
+
+.openwebrx-rx-details-arrow--up .up {
+    display: initial;
+}

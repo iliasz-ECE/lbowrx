@@ -1,0 +1,12 @@
+[Unit]
+Description=Load Balancing OpenWebRX  server
+
+[Service]
+Type=simple
+User=lbowrx-user
+Group=lbowrx-user
+ExecStart=/home/lbowrx-user/lbowrx/lbowrx-owrx/lbowrx_owrx/openwebrx.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

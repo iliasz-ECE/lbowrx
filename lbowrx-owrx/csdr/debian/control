@@ -1,0 +1,33 @@
+Source: csdr
+Maintainer: Jakob Ketterl <jakob.ketterl@gmx.de>
+Section: hamradio
+Priority: optional
+Standards-Version: 4.3.0
+Build-Depends: debhelper (>= 10), libfftw3-dev (>= 3.3), libsamplerate0-dev (>= 0.1.8)
+
+Package: libcsdr0
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: simple library for software defined radio
+ A simple DSP library for Software Defined Radio.
+
+Package: libcsdr-dev
+Architecture: any
+Depends: libcsdr0 (=${binary:Version}), libfftw3-dev (>= 3.3), libsamplerate0-dev (>= 0.1.8), ${shlibs:Depends}, ${misc:Depends}
+Description: development dependencies includes for libcsdr
+ A simple DSP library for Software Defined Radio.
+
+Package: csdr
+Architecture: any
+Depends: libcsdr0 (=${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Recommends: nmux (=${binary:Version})
+Description: command-line sdr
+ A simple DSP command-line tool for Software Defined Radio.
+
+Package: nmux
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: csdr (<= 0.18.0~133)
+Description: TCP stream multiplexer
+ It reads data from the standard input, and sends it to each client connected
+ through TCP sockets.
